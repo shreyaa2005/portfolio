@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PORTFOLIO</title>
+        <style>
+            body {
+                background: linear-gradient(to right, rgba(115, 114, 114, 0.95), rgba(74, 71, 72, 0.95), rgba(61, 56, 61, 0.9), rgba(39, 39, 39, 0.85), rgba(32, 31, 32, 0.95)), 
+                
+                font-family: 'Montserrat', sans-serif; 
+                color: black;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+            #first{
+                nav-right: auto;
+            }
+
+            .header{
+                text-align: right;
+                background-color: rgb(247, 114, 65);
+                color: blueviolet;
+                padding: 35px 16px;
+                z-index: 1000;
+                position: relative;
+            }
+            .skills,.openScource,.project,.achievements,.blogs,.talks,.contact{
+                margin-right: 40px;
+                text-wrap:balance;
+                color: black;
+                font-size: 20px;
+                text-decoration: none;
+                display: inline-block;
+                transition: transform 0.3s ease;
+                
+            }
+            .skills:hover,.openScource:hover,.project:hover,.achievements:hover,.blogs:hover,.talks:hover,.contact:hover{
+                
+                transform: scale(1.3);
+                color: rgb(226, 239, 239);
+                
+            }
+            .content{
+                padding: 16px;
+                color: rgb(0, 0, 0);
+            }
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            .sticky + .content {
+                padding-top: 102px; 
+            }
+            .content,.wid{
+                display: flex;
+                align-items: center;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .image-wrapper{
+                margin-left: 20px;
+                position: static;
+                filter: brightness(0.7);
+            }
+            .image-wrapper img{
+                max-width: 650px;
+                border-radius: 8px;
+                
+            }
+            .text p{
+                margin-right: 30px;
+                font-size: 30px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+            }
+            .text h1{
+                font-size: 40px;
+            }
+            .social-icons a{
+                margin-left: 20px;
+                display: inline-block;
+                transition: transform 0.3s ease;
+            }
+            .social-icons a:hover{
+                
+                transform: scale(1.2);
+            }
+            .resume a{
+                padding: 15px 35px;
+                border-radius:15px;
+                display: inline-block;
+                transition: transform 0.3s ease;
+                background-color: rgb(247, 242, 251);
+                color: black;
+                text-decoration: none;
+            }
+            .resume a:hover{
+                color: white;
+                background-color: black;
+                transform: scale(1.1);
+            }
+            .wid {
+                text-align: left;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .wid h1 {
+                margin-bottom: 10px;
+                text-align: left;
+            }
+            .wid p {
+                margin: 0;
+                text-align: left;
+                font-size: 25px;
+            }
+            .image-wid {
+                margin-right: 20px;
+                position: static;
+                filter: brightness(0.9);
+            }
+            .image-wid img {
+                max-width: 550px;
+                border-radius: 8px;
+            }
+            .certificate p{
+                text-align: left;
+                margin-right: 80px;
+                font-size: 30px;
+            }
+            .certificate img{
+                display: inline-block;
+                transition: transform 0.3s ease;
+                width: calc(33.33% - 20px);
+                border-radius: 8px;
+                margin-left: 20px;
+                width: 350px;
+                height: 500px;
+                
+            }
+            .certificate img:hover{
+                transform: scale(1.2);
+            }
+
+        </style>
+    </head>
+    <body>
+
+
+        <header>
+            <div class="header" id="myHeader">
+                <a href="#" class="skills">Skills</a>
+                <a href="#" class="openScource">Open Source</a>
+                <a href="#" class="project">Projects</a>
+                <a href="#" class="achievements">Achievements</a>
+                <a href="#" class="blogs">Blogs</a>
+                <a href="#" class="talks">Talks</a>
+                <a href="#" class="contact">Contact Me</a>
+            </div>
+        </header>
+
+
+
+        <div class="content">
+            <div class="text">
+                <h1>Hi All This is Shreya 👋</h1>
+                <p><em>A Computer Science Engineering student specializing in Data Science at Vellore Institute of Technology. Proficient in C, C++, Python, HTML, CSS, and DSA, I've contributed to web development projects. My skills include problem-solving, team work, and logical thinking, enhanced by internships.Passionate about continuous learning,  I'm currently advancing my expertise through coursework and practical applications. </em></p>
+                <br><br><br><br>
+                <div class="social-icons">
+                    <a href="https://github.com/shreyaa2005" target="_blank"><img src="https://cdn.icon-icons.com/icons2/639/PNG/512/social_media_logo_github_icon-icons.com_59096.png" alt="Github" style="width: 40px; height: 40px;"></a>
+                    <a href="www.linkedin.com/in/shreya-sv-87099328b" target="_blank"><img src="https://itcnet.gr/wp-content/uploads/2020/09/Linkedin-logo-on-transparent-Background-PNG--800x800.png" alt="LinkedIn" style="width: 43px; height: 43px;"></a>
+                    <a href="mailto:shreyasrini15@gmail.com" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/020/964/377/original/gmail-mail-icon-for-web-design-free-png.png" alt="Gmail" style="width: 40px; height: 40px;"></a>
+                    
+                </div><br><br><br>
+                <div class="resume">
+                    <a href="mailto:shreyasrini15@gmail.com" target="_blank">CONTACT ME</a>
+                    
+                </div>
+            </div>
+            <div class="image-wrapper">
+                <img src="https://imagetolink.com/ib/9GAxBZf8Xn.png" alt="Your Image">
+            </div>
+        </div>
+
+
+
+        <br><br>
+        <div class="wid">
+            <div class="image-wid">
+                <br><br><br>
+                <img src="https://imagetolink.com/ib/PvbSzAOxPv.png" alt="Your Image">
+            </div>
+            <div>
+                <h1>WHAT I DO 🌟</h1><br>
+                <p><strong>Database Management and Data Analysis.</strong></p><br>
+                <p><em>⚡ Manage and optimize databases using SQL to ensure efficient data storage and retrieval.</em></p>
+                <p><em>⚡ Analyze and interpret data to extract valuable insights, utilizing Python for data manipulation and analysis.</em></p>
+                <p><em>⚡ have going to complete an internship at CodSoft in the field of web development</em></p>
+            </div>
+        </div>
+
+
+        
+        <div class="certificate">
+            <h1>ACHIEVEMENTS AND CERTIFICATIONS 🏆</h1>
+            <p><strong>Discover my array of achievements and certifications, highlighting my proficiency and commitment in DS, Machine Learning, and Web Development! 🤖💻</strong></p>
+            <img src="https://imagetolink.com/ib/TUV1vBphzF.png" alt="image" style="margin-left: 150px;">
+            <img src="https://imagetolink.com/ib/5tMQESNCYL.png" alt="image">
+            <img src="https://imagetolink.com/ib/YNS04falMX.png" alt="image">
+            
+        </div>
+
+
+
+
+        <script>
+            // Get the header element
+            var header = document.getElementById("myHeader");
+
+            // Get the offset position where the header becomes sticky
+            var sticky = header.offsetTop;
+
+            // Add the sticky class when the scroll position reaches the header
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+
+            // Execute myFunction when the user scrolls
+            window.onscroll = function() {
+                myFunction();
+            };
+        </script>
+    </body>
+</html>
